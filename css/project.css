@@ -1,0 +1,291 @@
+.section-project {
+  margin-bottom: 77px;
+}
+
+.section-project__title {
+font-size: 48px;
+font-weight: normal;
+line-height: 33px;
+margin: 0;
+margin-bottom: 32px;
+}
+
+.section-project__text {
+font-size: 16px;
+margin-bottom: 18px;
+max-width: 1047px;
+line-height: 32px;
+}
+
+.tooltip-icon {
+position: relative;
+display: inline-flex;
+width: 20px;
+height: 20px;
+border-radius: 50px;
+background: url('../img/i\ -\ Тултип\ \(1\).png') no-repeat;
+transform: translateY(5px);
+transition: color .3s ease-in-out
+}
+
+.tooltip-icon:hover,
+.tooltip-icon:focus {
+background: url('../img/i\ -\ Тултип.png') no-repeat;
+}
+
+.tooltip-icon:hover > .tooltip-icon__text {
+opacity: 1;
+}
+
+.tooltip-icon__text {
+position: absolute;
+width: 300px;
+height: auto;
+bottom: 145%;
+right: -153px;
+padding: 10px 20px;
+color: var(--main-header-color);
+font-size: 12px;
+font-weight: 600;
+line-height: 16px;
+background: #cacaca;
+opacity: 0;
+transition: opacity .3s ease-in-out;
+}
+
+.more-project {
+color: var(--secondary-color);
+transition: color .3s ease-in-out;
+}
+
+.more-project:hover ,
+.more-project:focus {
+ border:  2px solid var(--focus-color);
+}
+
+.section-project__subtitle {
+font-weight: 600;
+font-size: 24px;
+line-height: 30px;
+margin: 0;
+margin-bottom: 25px;
+}
+
+.section-project__contain {
+position: relative;
+}
+
+.project__container {
+  max-width: 1452px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.project-slide {
+text-align: center;
+}
+
+.img-project {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: filter .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.img-project:hover,
+.img-project:focus {
+  filter: grayscale(0);
+  opacity: 1;
+  transition: filter .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.project-swiper-next,
+.project-swiper-prev {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 60px;
+  width: 30px;
+  height: 30px;
+  background-color: #666;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: border-color 200ms, background-color 200ms;
+}
+
+.project-swiper-next {
+  left: 98%;
+}
+
+.project-swiper-next::after,
+.project-swiper-prev::after {
+  content: '';
+  position: absolute;
+  padding: 3px;
+  border-style: solid;
+  border-color: #fff #fff transparent transparent;
+  border-width: 1px;
+  text-align: center;
+  font-size: 10px;
+  transition: color 200ms;
+}
+
+.project-swiper-next::after{
+  transform: rotate(45deg);
+  left: 8px;
+  top: 8px;
+}
+
+.project-swiper-prev::after {
+  transform: rotate(-135deg);
+  left: 10px;
+  top: 8px;
+}
+
+
+.project-swiper-next:hover,
+.project-swiper-prev:hover {
+  color: var(--main-header-color);
+  background-color: var(--secondary-color);
+}
+
+
+
+.project-swiper-next:focus,
+.project-swiper-prev:focus {
+  border: 2px solid var(--focus-color);
+}
+
+.project-swiper-prev:active,
+.project-swiper-next:active {
+  background-color: var(--focus-color);
+  border: 2px solid #D1A9F0;
+}
+
+.project-swiper-prev:active::after,
+.project-swiper-next:active::after {
+  color: var(--main-header-color);
+}
+
+@media (max-width: 1540px) {
+
+  .project-swiper-next,
+  .project-swiper-prev {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+
+ .section-project__text {
+  width: 99%;
+ }
+
+ .project__container {
+  max-width: 818px;
+  margin: 0 53px;
+ }
+
+
+ .project-swiper-next,
+ .project-swiper-prev {
+  display: block;
+  top: 45px;
+  }
+
+  .project-swiper-prev {
+    left: 0;
+  }
+
+
+
+.img-project {
+  width: 384px;
+}
+
+}
+
+@media (max-width: 768px) {
+ .section-project__text {
+  width: 93%;
+  margin-bottom: 29px;
+ }
+
+ .project__container  {
+  max-width: 563px;
+ }
+
+ .img-project {
+  width: 263px;
+  height: 106px;
+ }
+
+.section-project__subtitle {
+  margin-bottom: 30px;
+ }
+
+.project-swiper-next,
+.project-swiper-prev {
+  top: 37px;
+ }
+}
+
+@media (max-width: 414px) {
+.img-project {
+ width: 195px;
+ height: 65px;
+ }
+
+ .project-swiper-next,
+ .project-swiper-prev {
+  top: 15px;
+ }
+}
+
+@media (max-width: 375px) {
+  .project-swiper-next {
+    right: 8px;
+ }
+}
+
+
+@media (max-width: 320px) {
+  .section-project {
+    padding-left: 0px;
+   margin-bottom: 20px;
+  }
+
+  .section-project__title {
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 38px;
+  margin-bottom: 12px;
+  }
+
+  .section-project__text {
+    width: 98%;
+    margin-bottom: 10px;
+  }
+
+  .section-project__subtitle {
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+
+  .project-swiper-next {
+    right: 1px;
+ }
+
+}
+
+
+
+
+
+
+
+
+
